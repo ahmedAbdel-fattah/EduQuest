@@ -1,0 +1,1 @@
+1- update instructor table -> make default value -> null to column

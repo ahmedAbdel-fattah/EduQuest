@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+/* General Styling for the certificate */
+.certificate {
+    width: 900px; /* Set a fixed width */
+    height: auto; /* Let height adjust according to content */
+    padding: 40px;
+    /* background-color: white; */
+    border: 5px solid #6200EA; /* Purple border */
+    /*border-radius: 20px;*/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+    position: relative; /* Important to ensure canvas captures content correctly */
+    background-image: url("../img/cert.png");
+    background-size: 100%;
+}
+
+/* Styling for certificate content */
+.certificate h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #6200EA; /* Purple text */
+    margin-bottom: 20px;
+}
+
+.certificate h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.certificate p {
+    text-align: center;
+    font-size: 18px;
+    margin: 15px 0;
+    color: #555;
+}
+
+/* Styling for dynamic elements */
+.student-name, .course-title, .date, .instructor-name {
+    font-weight: bold;
+    color: #6200EA; /* Purple text */
+}
+
+/* Adding a background image (optional) */
+.certificate-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Background behind all content */
+    opacity: 0.9; /* Watermark effect */
+}
+
+/* Content wrapper with z-index to stay above the background */
+.certificate-content {
+    position: relative;
+    z-index: 2; /* Keeps content above the background */
+}
+
+/* Logo positioning */
+.certificate-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.certificate-logo img {
+    width: 150px; /* Fixed width for the logo */
+    height: auto;
+    display: inline-block;
+}
+
+/* Footer or signature area */
+.certificate-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.certificate-footer p {
+    font-size: 16px;
+    color: #333;
+    font-style: italic;
+}
+
+/* Ensure the page is responsive */
+@media screen and (max-width: 768px) {
+    .certificate {
+        width: 100%;
+        padding: 20px;
+        border-width: 3px;
+    }
+
+    .certificate h1 {
+        font-size: 28px;
+    }
+
+    .certificate h2 {
+        font-size: 22px;
+    }
+
+    .certificate p {
+        font-size: 16px;
+    }
+}
+
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}

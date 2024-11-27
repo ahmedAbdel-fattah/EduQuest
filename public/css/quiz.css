@@ -1,0 +1,134 @@
+.navbar-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Adjust the height of the background */
+    background: linear-gradient(135deg, #6a0572, #a4508b); /* Purple to pink gradient */
+    z-index: -1; /* Position behind the navbar */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+.quiz-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    height: 80vh;
+    overflow-y: scroll;
+    border: 2px solid #eee;
+    width: 1300px;
+}
+
+.quiz-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: #4c4c6d;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.question-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fafbfe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.question-container:hover {
+    background-color: #fbeeff;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    font-size: 18px;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #eaf0ff;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+.submit-container {
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 20px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.submit-button {
+    background-color: #4c4c6d;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #6c63ff;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .quiz-container {
+        width: 90%;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+
+    .option {
+        font-size: 16px;
+    }
+
+    .submit-button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.correct-answer {
+    background-color: #d4edda;
+}
+.incorrect-answer {
+    background-color: #f8d7da;
+}
